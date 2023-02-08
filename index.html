@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css File -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Fuel Conversion & Cost Saving Calculator</title>
+</head>
+<body>
+    <!-- Website By Adnan Iqbal -->
+    <div class="container">
+        <nav class="navbar-section">
+            <img src="./assets/hpcl-logo.png" alt="" class="navbar-logo">
+        <div class="social-icons">
+            <a target="_blank" href="https://twitter.com/HPCL"><img class="social-link" src="./assets/twitter.png" alt=""></a>
+            <a target="_blank" href="https://www.instagram.com/hpcl/"><img class="social-link" src="./assets/instagram.png" alt=""></a>
+            <a target="_blank" href="https://www.facebook.com/hpcl"><img class="social-link" src="./assets/facebook-logo.png" alt=""></a>
+            <a target="_blank" href="https://www.linkedin.com/company/hpcl/?originalSubdomain=in"><img class="social-link" src="./assets/linkedin.png" alt=""></a>
+        </div>
+        </nav>
+        <section class="about-section">
+            <h2 class="about-title">Fuel Conversion & Cost Saving Calculator</h2>
+            <p>
+                Thinking of converting your existing heating application from liquid fuels to gas? <br>
+                Are you looking for help to know how much you would save after the fuel conversion? <br>
+                Our Fuel Conversion Calculator will help you to compare the price of using LPG over other fuels such as High Speed Diesel (HSD), Petrol (Gasoline) and Furnace Oil (FO).
+            </p>
+        </section>
+        <main class="hero-section">
+            <h3 class="step-text">Step 1: Select Fuel Type</h3>
+            <div class="step-1">
+                    <input type="radio" id="diesel" name="fuel-type" value="diesel" class="input-hidden">
+                    <label for="diesel"><img src="./assets/diesel.png" alt=""></label><br>
+                    <input type="radio" id="Furnace-oil" name="fuel-type" value="Furnace-oil" class="input-hidden">
+                    <label for="Furnace-oil"><img src="./assets/furnace.png" alt=""></label><br>
+                    <input type="radio" id="petrol" name="fuel-type" value="petrol" class="input-hidden">
+                    <label for="petrol"><img src="./assets/petrol.png" alt=""></label><br>
+            </div>
+            <h3 class="step-text">Step 2: Enter Fuel Consumption (Ltr)</h3>
+            <div class="step-2">
+                    <input type="number" class="consump-inp" name="comsumption" id="consumption-input" placeholder="Consumption (in Liters) per Month">
+            </div>
+            <!-- Cost Of Fuel Per Liter -->
+            <div class="step-3">
+                <h3 class="step-text">Step 3: Enter Cost per Liter</h3>
+                <input type="number" class="costliter" name="costPerLiter" id="cost-liter" placeholder="Cost per Liter">
+            </div>
+            <div class="step-5">
+                <h3 class="step-text">Step 4: Enter cost of LPG per KG?</h3>
+                    <input type="number" class="costlpg" id="cost-lpg" placeholder="Cost of LPG per Kg">
+            </div>
+            <div class="output">
+                <span id="output"></span>
+            </div>
+            <input type="submit" class="submit-btn" id="submit" value="Submit">
+        </main>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

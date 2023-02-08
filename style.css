@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;  
+    font-family: 'Poppins', sans-serif;
+    /* border: 2px solid red; */
+}
+
+body {
+    width: 100%;
+    background-color: #cbcccb;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+/* ########## Navbar  */
+
+.navbar-section {
+    background-color: #fff;
+    width: 85vw;
+    font-size: 1.3rem;
+    padding: 1em 5em;
+    color: #a8dadc;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar-logo {
+    height: 70px;
+    margin-left: 2em;
+    
+}
+
+@media (max-width: 512px) {
+    .navbar-logo {
+        height: 50px;
+    }
+}
+
+.social-icons {
+    display: none;
+    justify-content: space-around;
+    margin-right: 5rem;
+}
+
+@media (min-width: 768px) {
+
+    .social-icons{
+        display: flex;
+        margin-left: 3em;
+    }
+    .social-link {
+        width: 30px;
+        margin-left: 1em;
+    }
+    
+}
+
+/* ######### About Section */
+
+.about-section {
+    overflow-x: hidden;
+    color: #fff;
+    background-color: #03045e;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 5em;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0.65em;
+}
+
+.about-section p {
+    font-size: 1rem;
+    margin-bottom: 2em;
+}
+
+/* ############### Hero Section */
+
+.hero-section {
+    padding: 5em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.step-text {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.step-1,
+.step-4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 512px) {
+    .step-1 {
+        flex-direction: column;
+    }
+}
+
+.step-1 label,
+.step-4 label{
+    font-size: 1rem;
+    font-weight: 300;
+}  
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type=radio]:checked + label>img {
+border: 1px solid #fff;
+box-shadow: 0 0 3px 3px #090;
+}
+
+input[type=radio] + label>img {
+border: 1px dashed #444;
+width: 150px;
+height: 150px;
+transition: 500ms all;
+}
+
+input[type=radio]:checked + label>img {
+transform: 
+    scale(110%);
+}
+  
+.step-2 {
+    display: grid;
+    grid-template-areas: 
+        "text1  x"
+        "input1 x";
+}
+
+.consump {
+    font-size: 1rem;
+    font-weight: 500;
+    grid-area: text1;
+}
+
+.consump-inp,
+.costliter,
+.costlpg {
+    grid-area: input1;
+    border: none;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.submit-btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 2em;
+}
+
+#output {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 2em 0;
+}
+
+.result {
+    font-size: 1.2rem;
+}
+
+.result-number {
+    color: #090;
+}
